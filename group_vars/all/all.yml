@@ -1,0 +1,19 @@
+service_account_email: ansible@numeric-drummer-369121.iam.gserviceaccount.com
+credentials_file: numeric-drummer-369121-5fef76ffbd99.json
+project_id: numeric-drummer-369121
+
+machine_type: e2-small
+image: debian-11
+instance_list:
+  - web-server-1,web-server-2
+  - db-server
+
+region: us-west3
+lb_members: us-west4-b/web-server-1,us-west4-b/web-server-2
+
+db_name: employee_db
+db_user: db_user
+db_user_password: Passw0rd
+
+ansible_user: scheatk
+ansible_ssh_private_key_file: ~/.ssh/google

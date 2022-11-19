@@ -1,0 +1,4 @@
+- include: deploy-instances.yml
+- include: configure-instances.yml
+- include: networking.yml
+
